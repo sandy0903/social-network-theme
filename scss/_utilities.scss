@@ -1,0 +1,159 @@
+
+// Backgrounds
+.bg{
+    &-primary{
+        @include set-background($primary-color);
+    }
+    &-light{
+        @include set-background($light-color);
+    }
+    &-dark{
+        @include set-background($dark-color);
+    }
+    &-success{
+        @include set-background($success-color);
+    }
+    &-danger{
+        @include set-background($danger-color);
+    }
+    &-white{
+        @include set-background(#fff);
+    }
+}
+
+//buttons
+.btn{
+    display:inline-block;
+    background-color:$light-color;
+    color:#333;
+    padding:0.4rem 1rem;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    margin-right:0.5rem;
+    margin-top:1rem;
+    &:hover{
+        background-color:darken($light-color,5%);
+    }
+
+    &-primary{
+        @include set-background($primary-color);
+        &:hover{
+            background-color:lighten($primary-color,5%);
+        }
+
+    }
+    &-light{
+        &:hover{
+            background:lighten($dark-color,20%);
+            color:#fff;
+        }
+        
+    }
+    &-dark{
+        @include set-background($dark-color);
+        &:hover{
+            background-color:lighten($dark-color,5%);
+        }
+
+    }
+    &-danger{
+        @include set-background($danger-color);
+        &:hover{
+            background-color:lighten($danger-color,5%);
+        }
+
+    }
+    &-success{
+        @include set-background($success-color);
+        &:hover{
+            background-color:lighten($success-color,5%);
+        }
+
+    }
+    
+
+
+}
+//badge
+.badge{
+    cursor:pointer;
+    font-size:10px;
+    padding:5px ;
+    margin:3px 0;
+    text-align:center;
+    &-primary{
+        @include set-background($primary-color);
+    }
+    &-light{
+        @include set-background($light-color);
+    }
+    &-dark{
+        @include set-background($dark-color);
+    }
+    &-success{
+        @include set-background($success-color);
+    }
+    &-danger{
+        @include set-background($danger-color);
+    }
+    &-white{
+        @include set-background(#fff);
+    }
+}
+
+.round-img{
+    border-radius:50%;
+    width:200px;
+}
+.profile{
+    &-top{
+        border:1px solid #ccc;
+        margin-top:1rem;
+        padding:1rem;
+        grid-area:top;
+       text-align:center;
+    }
+    &-about{
+        border:1px solid #ccc;
+        margin-top:1rem;
+        padding:1rem;
+        grid-area:about;
+        text-align:center;
+    }
+    &-exp{
+        border:1px solid #ccc;
+        margin-top:1rem;
+        padding:1rem;
+        grid-area:exp;
+    }
+    &-edu{
+        border:1px solid #ccc;
+        margin-top:1rem;
+        padding:1rem;
+        grid-area:edu;
+    }
+    &-github{
+        margin-top:1rem;
+        grid-area:github;
+        margin-bottom:1rem;
+        .repo{
+            border:1px solid #ccc;
+            padding:1rem;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:1rem;
+        }
+       
+    }
+
+}
+// line
+.line{
+    width:90%;
+    margin:auto;
+    border:1px solid #ccc;
+    margin-top:1rem ;
+    margin-bottom:1rem;
+}

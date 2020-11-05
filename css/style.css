@@ -1,0 +1,381 @@
+.bg-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.bg-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0.4rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #e7e7e7;
+}
+
+.btn-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #1ab6cf;
+}
+
+.btn-light:hover {
+  background: #626d78;
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #3f474e;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #e04b59;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #2dbc4e;
+}
+
+.badge {
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px;
+  margin: 3px 0;
+  text-align: center;
+}
+
+.badge-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.badge-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.badge-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.badge-white {
+  background-color: #fff;
+  color: #333;
+}
+
+.round-img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.profile-top {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  padding: 1rem;
+  grid-area: top;
+  text-align: center;
+}
+
+.profile-about {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  padding: 1rem;
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-exp {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  padding: 1rem;
+  grid-area: exp;
+}
+
+.profile-edu {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  padding: 1rem;
+  grid-area: edu;
+}
+
+.profile-github {
+  margin-top: 1rem;
+  grid-area: github;
+  margin-bottom: 1rem;
+}
+
+.profile-github .repo {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.line {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: #17a2b8;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+.alert {
+  width: 100%;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.form textarea {
+  width: 100%;
+}
+
+.form-group {
+  margin: 1rem 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.form-text {
+  display: block;
+  color: #ccc;
+}
+
+.post-form-header {
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #17a2b8;
+  position: fixed;
+  z-index: 1;
+}
+
+nav h1 {
+  margin: 0 1rem;
+  z-index: 2;
+}
+
+nav li {
+  display: inline-flex;
+  margin: 0 1rem;
+  z-index: 2;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #17a2b8;
+}
+
+.landing {
+  background-image: url("/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing .dark-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.landing .dark-overlay .landing-inner {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 1;
+}
+
+.landing .dark-overlay .landing-inner h1 {
+  font-size: 2rem;
+}
+
+.container {
+  width: 65%;
+  margin: auto;
+  position: relative;
+  top: 5rem;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  grid-gap: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  padding: 0.5rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas: "top top" "about about" "exp edu" "github github";
+  grid-gap: 1rem;
+}
+
+.skills .p-1 {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.icons a {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.border-right {
+  border-right: 1px solid #ccc;
+  height: 15px;
+  padding: 0 15px 0 0;
+}
+
+table thead th {
+  background-color: #f4f4f4;
+  padding: 1rem 0.7rem;
+  text-align: left;
+  width: 10%;
+}
+
+.dash-buttons a {
+  margin: 1rem 0.5rem;
+}
+
+.post {
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post div {
+  padding: 1rem;
+}
+
+.post div h4 {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

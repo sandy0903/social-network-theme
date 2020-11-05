@@ -1,0 +1,191 @@
+@import "config";
+@import "utilities";
+@import "form";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color:$primary-color;
+   
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+nav{
+    width:100%;
+    min-height:50px;
+   
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:2px solid $primary-color;
+    position:fixed;
+    z-index:1;
+    h1{
+        margin:0 1rem;
+        z-index:2;
+    }
+    
+    li{
+        display:inline-flex;
+        margin:0 1rem;
+        z-index:2;
+    }
+    a{
+        color:#fff;
+        &:hover{
+          color:$primary-color;
+        }
+    }
+}
+.landing{
+    background-image:url("/showcase.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+
+    .dark-overlay{
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:rgba(0,0,0,0.7);
+        
+        .landing-inner{
+            color:#fff;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:100%;
+            opacity:1;
+            h1{
+                font-size:2rem;
+            }
+        }
+
+      }
+    
+}
+
+.container{
+  width:65%;
+  margin:auto;
+  position:relative;
+  top:5rem;
+}
+.profile{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  align-items: center;
+  grid-gap:10px;
+  margin-bottom:1rem;
+  border:2px solid #ccc;
+  padding:0.5rem;
+ 
+}
+
+// profile page using grid
+
+.profile-grid{
+  display:grid;
+  grid-template-areas:
+  "top top"
+  "about about"
+  "exp edu"
+  "github github";
+  grid-gap:1rem;
+  
+ 
+}
+.skills {
+  .p-1{
+    display:inline-block;
+    padding:0 1rem;
+  }
+}
+
+.icons a{
+  color:#fff;
+  font-size:0.7rem;
+}
+
+// dashboard
+
+.border-right{
+  border-right:1px solid #ccc;
+  height:15px;
+  padding:0 15px 0 0;
+
+}
+
+table thead th{
+  background-color:$light-color;
+  padding:1rem 0.7rem;
+  text-align:left;
+  width:10%;
+}
+.dash-buttons a{
+  margin:1rem 0.5rem;
+}
+
+// posts
+.post{
+  border:1px solid #ccc;
+  margin:1rem 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  div{
+    padding:1rem;
+    h4{
+      text-align:center;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

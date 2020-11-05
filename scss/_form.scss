@@ -1,0 +1,40 @@
+.text-primary{
+    color:$primary-color;
+}
+
+.large{
+    font-size:2rem;
+}
+.alert{
+    width:100%;
+    color:#fff;
+    padding:0.5rem;
+    
+}
+.form{
+    width:100%;
+    textarea{
+        width:100%;
+    }
+    
+    &-group{
+        margin:1rem 0;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"]
+        {
+            width:100%;
+            padding:0.5rem;
+        }
+    }
+    &-text{
+        display:block;
+        color:#ccc;
+    }
+}
+
+.post-form-header{
+    font-size:0.9rem;
+    margin:0.8rem 0;
+}
